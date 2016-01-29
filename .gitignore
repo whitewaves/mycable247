@@ -4,4 +4,5 @@
 out
 /bower.json
 /bower_components
+.gitignore
 gen
