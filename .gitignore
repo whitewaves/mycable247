@@ -3,4 +3,5 @@
 *.iml
 out
 /bower.json
+/bower_components
 gen
