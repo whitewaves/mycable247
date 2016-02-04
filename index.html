@@ -21,10 +21,21 @@
         </style>
     </head>
     <body ng-app="wwApp" layout="column" layout-align="center">
-            <div layout="row" layout-align="center">
-                <div>First item in row</div>
-                <!--<div flex="20">Second item in row</div>-->
-            </div>
+
+            <md-content layout="row" layout-align="center">
+                <md-card flex="20">
+                    <md-card-title class="redBkg">
+                        <md-card-title-text>
+                            <span class="md-headline">Sign In</span>
+                            <!--<span class="md-subhead">Large</span>-->
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" layout-align="end center">
+                        <md-button>Login</md-button>
+                    </md-card-actions>
+                </md-card>
+            </md-content>
+            <!--<div>First item in row</div>-->
 
         <!-- Application Library Scripts -->
         <script src="assets/scripts/angular.min.js"></script>
