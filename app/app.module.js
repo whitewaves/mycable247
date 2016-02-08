@@ -6,6 +6,7 @@
         .module('wwApp',
         [
             'ui.router',
-            'ngMaterial'
+            'ngMaterial',
+            'ngMessages'
         ]);
 })();
