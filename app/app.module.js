@@ -7,6 +7,7 @@
         [
             'ui.router',
             'ngMaterial',
+            'ngAnimate',
             'ngMessages'
         ]);
 })();

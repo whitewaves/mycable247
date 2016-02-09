@@ -1,0 +1,38 @@
+<div layout="column" layout-align="center" layout-fill class="grey">
+    <div layout="row" layout-align="center">
+        <md-card flex="20" flex-xs="80" class="radius-0">
+            <form name="userForm" novalidate>
+                <md-card-title class="blue-grey darken-4">
+                    <md-card-title-text>
+                        <span class="md-headline white-text">SIGN IN</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content>
+                    <md-input-container class="margin-b-0">
+                        <label>Email Address</label>
+                        <input class="margin-b-0 margin-t-0" name="userName" ng-model="userName" required>
+                        <div ng-messages="userForm.userName.$error " ng-show="userForm.userName.$error.required && userForm.$submitted" >
+                            <div ng-message='required'>This is required!</div>
+                        </div>
+                    </md-input-container>
+                    <md-input-container class="margin-b-0 margin-t-0">
+                        <label>Password</label>
+                        <input class="margin-b-0 margin-t-0" name="password" ng-model="password" required>
+                        <div ng-messages="userForm.password.$error " ng-show="userForm.password.$error.required && userForm.$submitted" >
+                            <div ng-message='required'>This is required!</div>
+                        </div>
+                    </md-input-container>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="center">
+                    <md-button ng-disabled="userForm.$invalid" class="md-raised md-primary radius-0">Login</md-button>
+                </md-card-actions>
+            </form>
+            <div layout="row" layout-align="center" class="padding-15 md-caption">
+                <div><md-checkbox ng-disabled="userForm.$invalid" class="margin-b-0">Keep Me Signed In</md-checkbox></div>
+                <div flex class="center">|</div>
+                <a class="red-text" ui-sref="password-reset">Forgot Password?</a>
+            </div>
+        </md-card>
+    </div>
+    <div layout="row" layout-align="center" class="md-caption white-text">Copyright: Owinbest 2016. All Rights Reserved.</div>
+</div>
