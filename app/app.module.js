@@ -8,6 +8,9 @@
             'ui.router',
             'ngMaterial',
             'ngAnimate',
-            'ngMessages'
+            'ngMessages',
+            'angular-jwt',
+            'angular-storage',
+            'ngMdIcons'
         ]);
 })();
