@@ -11,6 +11,7 @@
             'ngMessages',
             'angular-jwt',
             'angular-storage',
-            'ngMdIcons'
+            'ngMdIcons',
+            'angular-loading-bar'
         ]);
 })();

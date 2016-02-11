@@ -8,6 +8,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
 
+        <link rel="stylesheet" href="assets/css/loading-bar.min.css">
         <link rel="stylesheet" href="assets/css/materialize.min.css">
         <link rel="stylesheet" href="assets/css/angular-material.min.css">
         <link rel="stylesheet" href="assets/css/angular-material-icons.css">
@@ -22,8 +23,8 @@
             }
         </style>
     </head>
-    <body ng-app="wwApp" ui-view>
-        <!--<div class="h-100-percent" ui-view></div>-->
+    <body ng-app="wwApp" ng-controller="AppCtrl as app" ui-view>
+
         <!-- Application Library Scripts -->
         <script src="assets/scripts/angular.min.js"></script>
         <script src="assets/scripts/angular-animate.min.js"></script>
@@ -34,11 +35,21 @@
         <script src="assets/scripts/angular-storage.min.js"></script>
         <script src="assets/scripts/angular-ui-router.min.js"></script>
         <script src="assets/scripts/angular-material-icons.min.js"></script>
+        <script src="assets/scripts/loading-bar.min.js"></script>
 
         <!-- Application Modules -->
         <script src="app/app.module.js"></script>
         <script src="app/app.constant.js"></script>
         <script src="app/app.materialTheme.config.js"></script>
         <script src="app/app.route.config.js"></script>
+        <script src="app/app.config.js"></script>
+        <script src="app/app.run.js"></script>
+
+        <!-- Application Services -->
+        <script src="app/services/authService.js"></script>
+        <script src="app/services/authInterceptor.js"></script>
+
+        <!-- Application Controllers -->
+        <script src="app/controllers/appController.js"></script>
     </body>
 </html>
